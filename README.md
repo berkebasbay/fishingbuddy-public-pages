@@ -6,14 +6,11 @@ This folder contains publish-ready static support and privacy pages for App Stor
 - `privacy/index.html`
 - `styles.css`
 
-Before using these in App Store Connect:
+Published URLs:
 
-1. Review the final public app name.
-2. Replace the contact placeholders with the owner-approved support email or support form URL.
-3. Publish the folder to a public HTTPS host.
-4. Fill the resulting public URLs in `Docs/AppStoreConnectOwnerInputs.proposed`.
+- Support URL: `https://berkebasbay.github.io/fishingbuddy-public-pages/support/`
+- Privacy Policy URL: `https://berkebasbay.github.io/fishingbuddy-public-pages/privacy/`
 
-Suggested URL shape after publishing:
-
-- Support URL: `https://<public-host>/support/`
-- Privacy Policy URL: `https://<public-host>/privacy/`
+Owner review is still required before final App Store approval. The current
+support flow uses the public GitHub Issues tracker and warns users not to include
+sensitive personal information in public requests.
