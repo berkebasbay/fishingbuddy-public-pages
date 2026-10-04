@@ -3,44 +3,60 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>FishingBuddy Privacy Policy</title>
-    <meta name="description" content="Privacy policy for the FishingBuddy iOS app.">
+    <meta name="release-contract" content="balikci-market-1.0-15-manual-photo-review-local-only">
+    <meta name="release-page" content="privacy">
+    <title>Balıkçı Market Privacy Policy</title>
+    <meta name="description" content="Privacy policy for the Balıkçı Market iOS app.">
     <link rel="stylesheet" href="../styles.css">
   </head>
   <body>
     <div class="page">
       <div class="page-header">
         <div class="eyebrow">Privacy Policy</div>
-        <h1>FishingBuddy Privacy Policy</h1>
-        <p>Draft date: July 2, 2026</p>
-        <p>This privacy policy applies to the current iOS app published as FishingBuddy or Balikci Market. The final public app name should match App Store Connect before this page is published.</p>
+        <h1>Balıkçı Market Privacy Policy</h1>
+        <p>Effective date: October 4, 2026</p>
+        <p><a href="tr/">Türkçe</a></p>
+        <p>This privacy policy applies to the Balıkçı Market iOS app.</p>
       </div>
 
       <div>
         <h2>Overview</h2>
-        <p>The app is designed as a local-first fishing assistant. It helps users plan fishing trips, save personal fishing spots, review weather-aware fishing guidance, identify fish from selected photos, read a fish guide, and keep catch records on device.</p>
+        <p>The app is designed as a local-first fishing assistant. It helps users plan fishing trips, save personal fishing spots, review weather-aware fishing guidance, compare selected photos with a fish guide, choose species manually, and keep catch records on device.</p>
       </div>
 
       <div>
         <h2>Data Collection</h2>
-        <p>The current MVP does not include user accounts, a backend database, analytics SDKs, advertising SDKs, third-party tracking, fish-photo uploads, CloudKit or iCloud sync, or a remote Fishial API.</p>
-        <p>User-created fishing spots, catch records, preferences, and related fishing notes are stored locally on the user's device in the current build.</p>
+        <p>The app does not include user accounts, a developer-operated backend database, analytics SDKs, advertising SDKs, third-party tracking, fish-photo uploads, CloudKit or iCloud sync, or a remote fish-recognition API.</p>
+        <p>Personal fishing spots, catch and trip records, gear, preferences, related photos, and fishing notes are stored locally on the user's device.</p>
       </div>
 
       <div>
         <h2>Photos</h2>
-        <p>The app can use the system photo picker when a user selects an image for fish identification or local catch records. In the current build, selected fish photos are processed on device with a bundled Core ML model. The app does not upload selected fish photos to a server.</p>
+        <p>The app uses the system photo picker when a user chooses an image for photo species review or a local record. Photo species review remains user-controlled: the user compares the selected photo with the bundled guide and confirms the species before saving. The camera can take a photo for a catch record or personal fishing spot. Images used in records are resized and stored on device. The app does not upload these photos to a developer-operated recognition service or storage server.</p>
       </div>
 
       <div>
         <h2>Location</h2>
-        <p>The app can request when-in-use location permission for the Spots map. Location is used to center the map near the user. Saved fishing spot coordinates are stored locally when the user creates or edits spots.</p>
+        <p>The app can request when-in-use location permission for the personal fishing spots map. Location is used to center the map near the user. Personal fishing spot coordinates are stored locally when the user creates or edits a spot.</p>
       </div>
 
       <div>
         <h2>Weather And Maps</h2>
         <p>The app uses Apple WeatherKit for weather-aware fishing guidance. WeatherKit requests weather for coordinates through Apple's weather services.</p>
         <p>The app uses Apple MapKit for maps. MapKit may load map tiles and related platform map services from Apple.</p>
+        <p>Optional marine and river model forecasts use Open-Meteo in the free, noncommercial community pilot. When enabled for a plan or wave alert, selected coordinates are rounded to two decimal places before being sent. Names, notes, catch records and photos are not sent. Open-Meteo receives network metadata such as IP addresses; its <a href="https://open-meteo.com/en/terms">terms and privacy notice</a> describe technical logs, including requested coordinates, kept for up to 90 days. Cached forecasts retain their original dates.</p>
+        <p>Official inland-water views request public tables from the selected water authority and DSİ. These requests contain the selected public source and date, not your personal fishing records.</p>
+      </div>
+
+      <div>
+        <h2>Records, Exports And Feedback</h2>
+        <p>Each catch can contain a photo, measured length and weight, disposition, identified species, bait and tackle. Place-access notes and fishing statistics stay on device. User-created JSON backups can include these records and photos. CSV exports exclude coordinates and photos; catch notes are optional. You choose the file destination or sharing recipient.</p>
+        <p>Apple MetricKit provides delayed crash and performance diagnostics. The app stores only local counts grouped by build, without raw diagnostic payloads or fishing data. The in-app feedback form lets you review and send text through your chosen email or sharing app. A local diagnostic summary is attached only when you enable it. No feedback is automatically uploaded to a developer server. Apple may separately provide TestFlight crash reports and feedback under its platform settings and privacy practices.</p>
+      </div>
+
+      <div>
+        <h2>Guide Images And External Links</h2>
+        <p>Representative fish images included in the guide are stored in the app where available. Source and license links are optional links that open the relevant external website only when the user taps them. The external website may receive standard network information such as the user's IP address and browser request under its own privacy policy.</p>
       </div>
 
       <div>
@@ -50,22 +66,22 @@
 
       <div>
         <h2>Local Data Removal</h2>
-        <p>Because the current MVP stores user-created data locally, deleting the app from the device removes the app's local MVP data from that device.</p>
+        <p>Because the app stores user-created data locally, deleting the app removes that local app data from the device. User-controlled iCloud or Finder device backups may retain a copy until the user deletes or replaces those backups. The developer does not hold account or server-side user data that can be deleted remotely.</p>
       </div>
 
       <div>
         <h2>Children's Privacy</h2>
-        <p>The current MVP is a general fishing utility and does not include account creation, messaging, unrestricted web access, or user-generated public content.</p>
+        <p>The app is a general fishing utility and does not include account creation, messaging, or user-generated public content.</p>
       </div>
 
       <div>
         <h2>Contact</h2>
-        <p>For privacy questions or deletion requests, open a request through the public support tracker: <a href="https://github.com/berkebasbay/fishingbuddy-public-pages/issues">FishingBuddy Support Issues</a>. Do not include sensitive personal information in a public issue.</p>
+        <p>For privacy questions, open a request through the public support tracker: <a href="https://github.com/berkebasbay/fishingbuddy-public-pages/issues">Balıkçı Market Privacy Support</a>. Support cannot delete data stored on your device remotely. Do not include sensitive personal information in a public issue.</p>
       </div>
 
       <div>
         <h2>Changes</h2>
-        <p>If analytics, accounts, subscriptions, cloud sync, backend services, camera capture, remote uploads, or other network services are added later, this policy and App Store Connect privacy answers must be updated before release.</p>
+        <p>If analytics, accounts, subscriptions, cloud sync, backend services, remote uploads, or other network services are added later, this policy and App Store Connect privacy answers will be updated before release.</p>
       </div>
     </div>
   </body>
